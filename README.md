@@ -82,24 +82,7 @@ DeliveryExecutive* assignDeliveryExecutive(Order order) {
 
 3. Function to display deliveryexecutive's activity thus far
 To monitor the activities of delivery executives and ensure that deliveries are executed smoothly, this function keeps track of their actions. It records information such as the time of placing order, arrival at the destination. This data can be later utilized for performance evaluation and improving the overall delivery process. The code is given below.
- void displayDeliveryHistory() {
-        cout << "TRIP\tEXECUTIVE\tRESTAURANT\tDESTINATION POINT\tORDERS\tPICK-UP TIME\tDELIVERY TIME\tDELIVERY CHARGE" << endl;
-      
- for (const auto& executive : deliveryExecutives) {
-        if(executive.deliveryChargeEarned==0)
-          break;
-           tripCount++;
-           cout << tripCount <<"\t"<<executive.name<<"\t\t"<<executive.rest<<"\t\t"<<executive.dest<<"\t\t\t\t"<<executive.lastTripTime<<"\t\t"<< executive.droptime<<"\t\t"<<executive.deliveryChargeEarned<< endl;
-        }
-        cout << "Total earned:" << endl;
-        cout << "Executive\tAllowance\tDelivery Charges\tTotal" << endl;
-        for (const auto& executive : deliveryExecutives) {
-            if(executive.deliveryChargeEarned==0)
-            break;
-            int total = executive.deliveryChargeEarned + 10;
-            cout << executive.name << "\t\t" << 10 << "\t\t" << executive.deliveryChargeEarned << "\t\t\t" << total << endl;
-        }
-    }
+ 
 
 
 By incorporating these three key functions, the Food Delivery Booking System enhances the user experience, optimizes delivery operations, and provides insights for continuous improvement.
