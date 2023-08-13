@@ -81,7 +81,7 @@ DeliveryExecutive* assignDeliveryExecutive(Order order) {
 
 
 3. Function to display deliveryexecutive's activity thus far
-To monitor the activities of delivery executives and ensure that deliveries are executed smoothly, this function keeps track of their actions. It records information such as the time of placing order, arrival at the destination. This data can be later utilized for performance evaluation and improving the overall delivery process. The code is given below.
+To monitor the activities of delivery executives and ensure that deliveries are executed smoothly, this function keeps track of their actions. It records information such as the time of placing order, arrival at the destination. This data can be later utilized for performance evaluation and improving the overall delivery process. 
  
 
 
